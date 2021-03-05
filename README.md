@@ -9,6 +9,17 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rubicon-ml-feed
 
 Summary: Client library and CLI for model development and governance
 
+Documentation: https://capitalone.github.io/rubicon/
+
+Rubicon is a data science tool that captures and stores model training and
+execution information, like parameters and outcomes, in a repeatable and
+searchable way. Rubicon's git integration associates these inputs and outputs
+directly with the model code that produced them to ensure full auditability and
+reproducibility for both developers and stakeholders alike. While experimenting,
+the Rubicon dashboard makes it easy to explore, filter, visualize, and share
+recorded work.
+
+
 Current build status
 ====================
 
