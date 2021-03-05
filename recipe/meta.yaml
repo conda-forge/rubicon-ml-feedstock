@@ -1,5 +1,5 @@
 {% set name = "rubicon-ml" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rubicon-ml-{{ version }}.tar.gz
-  sha256: 8c2c4e9247ae54768f53cfd89e3e352f02b78e94cc03b350171d66e9804ac875
+  sha256: 547983aed1f66d413f7908d24995140668350e55fab777241db07574ded1cad6
 
 build:
   number: 0
@@ -45,9 +45,18 @@ test:
 
 about:
   home: https://github.com/capitalone/rubicon
+  doc_url: https://capitalone.github.io/rubicon/
   summary: Client library and CLI for model development and governance
   license: Apache-2.0
   license_file: LICENSE
+  description: |
+    Rubicon is a data science tool that captures and stores model training and 
+    execution information, like parameters and outcomes, in a repeatable and 
+    searchable way. Rubicon's git integration associates these inputs and outputs 
+    directly with the model code that produced them to ensure full auditability and 
+    reproducibility for both developers and stakeholders alike. While experimenting, 
+    the Rubicon dashboard makes it easy to explore, filter, visualize, and share 
+    recorded work.
 
 extra:
   recipe-maintainers:
