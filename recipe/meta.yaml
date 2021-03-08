@@ -11,7 +11,7 @@ source:
   sha256: 15e4092f07d0da8238de5c4e5f5fe2338e89b5bf6cae108e4b5b905b5b31d980
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - rubicon=rubicon.cli:cli
@@ -25,11 +25,11 @@ requirements:
     - click >=7.1
     - dask >=2.12.0
     - pandas >=1.0
-    - fsspec =0.8.3
+    - fsspec >=0.8.3
     - intake >=0.5.2
-    - pyarrow >=0.16.0,<0.18.0
+    - pyarrow >=0.18.0
     - python >=3.6
-    - pyyaml >=3.12.0,<5.4.0
+    - pyyaml >=5.4.0
     - s3fs >=0.5.1
     - prefect >=0.12.0
     - dash >=1.14.0
