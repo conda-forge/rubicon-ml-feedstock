@@ -1,5 +1,5 @@
 {% set name = "rubicon-ml" %}
-{% set version = "0.1.2" %}
+{% set version = "0.1.3" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rubicon-ml-{{ version }}.tar.gz
-  sha256: 15e4092f07d0da8238de5c4e5f5fe2338e89b5bf6cae108e4b5b905b5b31d980
+  sha256: 434b1d17289f4cc4c5beed26ff6850a047dcaf8824b83fd9d6cac61d3e5f0c5e
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - rubicon=rubicon.cli:cli
