@@ -1,5 +1,5 @@
 {% set name = "rubicon-ml" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rubicon-ml-{{ version }}.tar.gz
-  sha256: 860837a3e2a2f828a4c1b8e25781b7ef8c842b95f7141117bc5dc5e13c56af7b
+  sha256: edb2ac96a5faa63ccf39036bd375b601b38bbc5dda53e45ed979dbbcfa8c860e
 
 build:
   number: 0
@@ -25,7 +25,7 @@ requirements:
     - click >=7.1
     - dask >=2.12.0
     - pandas >=1.0
-    - fsspec >=0.8.7
+    - fsspec >=2021.4.0
     - intake >=0.5.2
     - jupyter-dash
     - pyarrow >=0.18.0
