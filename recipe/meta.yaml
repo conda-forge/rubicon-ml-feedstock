@@ -14,7 +14,7 @@ build:
   number: 0
   noarch: python
   entry_points:
-    - rubicon=rubicon.cli:cli
+    - rubicon_ml=rubicon_ml.cli:cli
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -38,20 +38,20 @@ requirements:
 
 test:
   imports:
-    - rubicon
+    - rubicon_ml
   commands:
-    - rubicon --help
+    - rubicon_ml --help
   requires:
     - pip
 
 about:
-  home: https://github.com/capitalone/rubicon
-  doc_url: https://capitalone.github.io/rubicon/
+  home: https://github.com/capitalone/rubicon-ml
+  doc_url: https://capitalone.github.io/rubicon-ml/
   summary: Client library and CLI for model development and governance
   license: Apache-2.0
   license_file: LICENSE
   description: |
-    Rubicon is a data science tool that captures and stores model training and 
+    rubicon-ml is a data science tool that captures and stores model training and 
     execution information, like parameters and outcomes, in a repeatable and 
     searchable way. Rubicon's git integration associates these inputs and outputs 
     directly with the model code that produced them to ensure full auditability and 
