@@ -1,5 +1,5 @@
 {% set name = "rubicon-ml" %}
-{% set version = "0.2.10" %}
+{% set version = "0.2.11" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rubicon-ml-{{ version }}.tar.gz
-  sha256: a6cf51ac3a63677ec95200b6739f5933567364a313ea8cfdfa03dea1f71f978d
+  sha256: af4302e6ab91a56e4e9ef7f0c39c6e254175bfd276e1ee9d2c76dd20723fcb5a
 
 build:
   number: 0
@@ -34,7 +34,9 @@ requirements:
     - prefect >=0.12.0
     - dash >=1.14.0
     - dash-bootstrap-components >=0.10.6
-
+    - dash-core-components
+    - dash-html-components
+    - dash-table
 test:
   imports:
     - rubicon_ml
