@@ -20,7 +20,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
   run:
     - click >=7.1
     - dask >=2.12.0
@@ -28,15 +28,12 @@ requirements:
     - fsspec >=2021.4.0
     - intake >=0.5.2
     - pyarrow >=0.18.0
-    - python >=3.6
+    - python >=3.8
     - pyyaml >=5.4.0
     - s3fs >=0.4
     - prefect >=0.12.0
-    - dash >=1.14.0
-    - dash-bootstrap-components >=0.10.6
-    - dash-core-components
-    - dash-html-components
-    - dash-table
+    - dash >=2.0.0
+    - dash-bootstrap-components >=1.0.0
 test:
   imports:
     - rubicon_ml
