@@ -7,17 +7,15 @@ Package license: Apache-2.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rubicon-ml-feedstock/blob/main/LICENSE.txt)
 
-Summary: Client library and CLI for model development and governance
+Summary: library and CLI for standardizing model development and governance
 
 Documentation: https://capitalone.github.io/rubicon-ml/
 
-rubicon-ml is a data science tool that captures and stores model training and
-execution information, like parameters and outcomes, in a repeatable and
-searchable way. Rubicon's git integration associates these inputs and outputs
-directly with the model code that produced them to ensure full auditability and
-reproducibility for both developers and stakeholders alike. While experimenting,
-the Rubicon dashboard makes it easy to explore, filter, visualize, and share
-recorded work.
+rubicon-ml is a machine learning solution designed to help standardize the model
+development lifecycle. rubicon-ml can track, visualize and share experiments with
+collaborators and reviewers as they develop, train and govern models designed
+to solve complex business problems. It simplifies model governance, auditability
+and reproducibility by tracking a wide range of model metadata.
 
 
 Current build status
