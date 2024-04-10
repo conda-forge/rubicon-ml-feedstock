@@ -1,5 +1,5 @@
 {% set name = "rubicon-ml" %}
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rubicon-ml-{{ version }}.tar.gz
-  sha256: 826a0c2a23e6cd8fa7dd613dd50def6cd1ddcd187b305ee32e45c0db5f94513c
+  sha256: 3ddcc33ef3258942aa5909487a45598bb0d182cfb540882c20764b286c14f6f7
 
 build:
   number: 0
@@ -35,7 +35,7 @@ requirements:
     - python >=3.8
     - pyyaml <=6.0.1,>=5.4.0
     - s3fs <=2024.2.0,>=0.4
-    - scikit-learn <=1.4.1.post1,>=0.22.0
+    - scikit-learn <=1.4.2,>=0.22.0
 
 test:
   imports:
