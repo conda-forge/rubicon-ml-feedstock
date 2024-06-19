@@ -1,5 +1,5 @@
 {% set name = "rubicon-ml" %}
-{% set version = "0.8.0" %}
+{% set version = "0.8.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rubicon-ml-{{ version }}.tar.gz
-  sha256: 9c756913a0716ccfb957296f3a382b945e1e61453250189662204445ebdf7941
+  sha256: 8408fabd14c5e8c5898c5dee11a651406c82d45ebab23c693c87cca7e3e54297
 
 build:
   number: 0
@@ -28,7 +28,7 @@ requirements:
     - fsspec <=2024.6.0,>=2021.4.0
     - intake <=2.0.5,>=0.5.2
     - jsonpath-ng <=1.6.1,>=1.5.3
-    - numpy <=1.26.4,>=1.22.0
+    - numpy <=2.0.0,>=1.22.0
     - pandas <=2.2.2,>=1.0
     - prefect <=2.19.5,>=2.16.5
     - pyarrow <=16.1.0,>=14.0.1
