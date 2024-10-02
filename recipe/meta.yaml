@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rubicon-ml-{{ version }}.tar.gz
-  sha256: 6f2be0ddcc2fbc93217fc4f2f73f16d33c9def6a3ba7748880a5276348e61eed
+  sha256: 54c00dac667549ad39eacd9240722ac4d7b89c410f285fb0c957abe67f66e938
 
 build:
   number: 0
@@ -23,18 +23,18 @@ requirements:
     - python >=3.8
   run:
     - click <=8.1.7,>=7.1
-    - dash <=2.17.1,>=2.0.0
+    - dash <=2.18.1,>=2.0.0
     - dash-bootstrap-components <=1.6.0,>=1.0.0
-    - fsspec <=2024.6.1,>=2021.4.0
-    - intake <=2.0.6,>=0.5.2
+    - fsspec <=2024.9.0,>=2021.4.0
+    - intake <=2.0.7,>=0.5.2
     - jsonpath-ng <=1.6.1,>=1.5.3
-    - numpy <=2.0.2,>=1.22.0
-    - pandas <=2.2.2,>=1.0
+    - numpy <=2.1.1,>=1.22.0
+    - pandas <=2.2.3,>=1.0
     - pyarrow <=17.0.0,>=14.0.1
     - python >=3.8
     - pyyaml <=6.0.1,>=5.4.0
-    - s3fs <=2024.6.1,>=0.4
-    - scikit-learn <=1.5.1,>=0.22.0
+    - s3fs <=2024.9.0,>=0.4
+    - scikit-learn <=1.5.2,>=0.22.0
 
 test:
   imports:
