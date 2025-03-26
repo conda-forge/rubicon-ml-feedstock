@@ -11,7 +11,7 @@ source:
   sha256: b9c45f5517d2e856aa43cee90673164007ebe38a1a980568a9cf8ac72e6248b0
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - rubicon_ml=rubicon_ml.cli:cli
@@ -20,7 +20,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
   run:
     - click <=8.1.7,>=7.1
     - dash <=2.18.1,>=2.0.0
@@ -31,7 +31,7 @@ requirements:
     - numpy <=2.1.1,>=1.22.0
     - pandas <=2.2.3,>=1.0
     - pyarrow <=17.0.0,>=14.0.1
-    - python >=3.8
+    - python >={{ python_min }}
     - pyyaml <=6.0.1,>=5.4.0
     - s3fs <=2024.9.0,>=0.4
     - scikit-learn <=1.5.2,>=0.22.0
@@ -43,6 +43,7 @@ test:
     - rubicon_ml --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/capitalone/rubicon-ml
