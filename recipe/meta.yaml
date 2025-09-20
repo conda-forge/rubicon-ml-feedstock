@@ -1,5 +1,5 @@
 {% set name = "rubicon-ml" %}
-{% set version = "0.12.1" %}
+{% set version = "0.13.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 6bdf0e3be42a95711c3a7e3be1153a1f5de7173ad0e04247056fdf0c6cfeca3c
+  sha256: 3f79f2cea61e652370da317e6652c0d7c876e532f074e483998cf0784f818d9b
 
 build:
   number: 0
@@ -22,19 +22,19 @@ requirements:
     - pip
     - python {{ python_min }}
   run:
-    - click <=8.2.1,>=7.1
+    - click <=8.3.0,>=7.1
     - dash <=2.18.2,>=2.0.0
     - dash-bootstrap-components <=1.7.1,>=1.0.0
-    - fsspec <=2025.7.0,>=2021.4.0
-    - intake <=2.0.7,>=0.5.2
+    - fsspec <=2025.9.0,>=2021.4.0
+    - intake <=2.0.8,>=0.5.2
     - jsonpath-ng <=1.7.0,>=1.5.3
-    - numpy <=2.3.1,>=1.22.0
-    - pandas <=2.3.1,>=1.0
+    - numpy <=2.3.3,>=1.22.0
+    - pandas <=2.3.2,>=1.0
     - pyarrow <=21.0.0,>=14.0.1
     - python >={{ python_min }}
     - pyyaml <=6.0.2,>=5.4.0
-    - s3fs <=2025.7.0,>=0.4
-    - scikit-learn <=1.7.1,>=0.22.0
+    - s3fs <=2025.9.0,>=0.4
+    - scikit-learn <=1.7.2,>=0.22.0
 
 test:
   imports:
