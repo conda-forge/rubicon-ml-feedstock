@@ -1,5 +1,5 @@
 {% set name = "rubicon-ml" %}
-{% set version = "0.14.1" %}
+{% set version = "0.15.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 7d5e6a9ed87feb607e4a2ddf46f41eefa4a4e0f9111a5a402d51fbf02ab998eb
+  sha256: b3afc71daae9ffdaea8857dcc79d0464005fb5904f21c41aa8559bcd6ad2d096
 
 build:
   number: 0
@@ -22,18 +22,18 @@ requirements:
     - pip
     - python {{ python_min }}
   run:
-    - click <=8.3.1,>=7.1
+    - click <=8.3.3,>=7.1
     - dash <=2.18.2,>=2.0.0
     - dash-bootstrap-components <=1.7.1,>=1.0.0
-    - fsspec <=2026.2.0,>=2021.4.0
+    - fsspec <=2026.3.0,>=2021.4.0
     - intake <=2.0.9,>=0.5.2
     - jsonpath-ng <=1.8.0,>=1.5.3
-    - numpy <=2.4.3,>=1.22.0
-    - pandas <=3.0.1,>=1.0
-    - pyarrow <=23.0.1,>=14.0.1
+    - numpy <=2.4.4,>=1.22.0
+    - pandas <=3.0.2,>=1.0
+    - pyarrow <=24.0.0,>=14.0.1
     - python >={{ python_min }}
     - pyyaml <=6.0.3,>=5.4.0
-    - s3fs <=2026.2.0,>=0.4
+    - s3fs <=2026.3.0,>=0.4
     - scikit-learn <=1.8.0,>=0.22.0
 
 test:
