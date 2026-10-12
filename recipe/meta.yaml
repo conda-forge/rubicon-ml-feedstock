@@ -1,5 +1,5 @@
 {% set name = "rubicon-ml" %}
-{% set version = "0.15.2" %}
+{% set version = "0.15.3" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: b9027b004cd7fa39b612930b0683af9333ae284d7bddafe957ac028982398d15
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: f1bf58cd827624ebb7040f698c5f618de022cc85ceb35e8b9066bc4900fca08a
 
 build:
   number: 0
@@ -22,18 +22,18 @@ requirements:
     - pip
     - python {{ python_min }}
   run:
-    - click <=8.4.1,>=7.1
+    - click <=8.4.2,>=7.1
     - dash <=2.18.2,>=2.0.0
     - dash-bootstrap-components <=1.7.1,>=1.0.0
-    - fsspec <=2026.6.0,>=2021.4.0
+    - fsspec <=2026.7.0,>=2021.4.0
     - intake <=2.0.9,>=0.5.2
     - jsonpath-ng <=1.8.0,>=1.5.3
-    - numpy <=2.5.0,>=1.22.0
-    - pandas <=3.0.3,>=1.0
-    - pyarrow <=24.0.0,>=14.0.1
+    - numpy <=2.5.2,>=1.22.0
+    - pandas <=3.0.5,>=1.0
+    - pyarrow <=25.0.1,>=14.0.1
     - python >={{ python_min }}
     - pyyaml <=6.0.3,>=5.4.0
-    - s3fs <=2026.6.0,>=0.4
+    - s3fs <=2026.7.0,>=0.4
     - scikit-learn <=1.9.0,>=0.22.0
 
 test:
