@@ -1,5 +1,5 @@
 {% set name = "rubicon-ml" %}
-{% set version = "0.15.3" %}
+{% set version = "0.15.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: f1bf58cd827624ebb7040f698c5f618de022cc85ceb35e8b9066bc4900fca08a
+  sha256: d1e906c70e1dcf7b1640b4cbbe67cd39581c71fbd258cf3121f88ccb622eb6d0
 
 build:
   number: 0
